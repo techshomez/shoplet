@@ -4,13 +4,15 @@ import ProductsPage from "./pages/Products";
 import ProductPage from "./pages/Product";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import "./app.scss";
 const Layout = () => {
-  <div className="app">
-    <Navbar />
-    <Outlet />
-    <Footer />
-  </div>;
+  return (
+    <div className="app">
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </div>
+  );
 };
 
 const router = createBrowserRouter([
