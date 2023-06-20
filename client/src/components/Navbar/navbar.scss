@@ -26,6 +26,32 @@
       display: flex;
       align-items: center;
       gap: 25px;
+
+      .icons {
+        display: flex;
+        gap: 15px;
+        color: #777;
+        cursor: pointer;
+
+        .cart__icon {
+          position: relative;
+
+          span {
+            font-size: 12px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #2879fe;
+            color: #fff;
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
     }
   }
 }

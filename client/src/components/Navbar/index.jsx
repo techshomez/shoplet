@@ -51,7 +51,7 @@ const Navbar = () => {
             <FiSearch />
             <FiUser />
             <FiHeart />
-            <div className="card__icon">
+            <div className="cart__icon">
               <FiShoppingCart />
               <span>0</span>
             </div>
