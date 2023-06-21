@@ -1,6 +1,11 @@
+import Slider from "../../components/Slider";
 import "./home.css";
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <div>
+      <Slider />
+    </div>
+  );
 };
 
 export default HomePage;
