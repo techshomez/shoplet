@@ -7,8 +7,11 @@ import {
   FiHeart,
   FiShoppingCart,
 } from "react-icons/fi";
+import { useState } from "react";
+import Cart from "../Cart";
 
 const Navbar = () => {
+  const [openCart, setOpenCart] = useState(false);
   return (
     <div className="navbar">
       <div className="wrapper">
@@ -51,13 +54,14 @@ const Navbar = () => {
             <FiSearch />
             <FiUser />
             <FiHeart />
-            <div className="cart__icon">
+            <div className="cart__icon" onClick={() => setOpenCart(!openCart)}>
               <FiShoppingCart />
               <span>0</span>
             </div>
           </div>
         </div>
       </div>
+      {openCart && <Cart />}
     </div>
   );
 };
